@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
- "scripts": {
-  "build:html": "node build.js && cpx \"src/assets/**/*\" dist/assets",
-  "dev": "nodemon --watch src/templates --ext njk --exec \"npm run build:html\""
-},
+  "scripts": {
+    "build:html": "node build.js && cpx \"src/assets/**/*\" dist/assets",
+    "dev": "nodemon --watch src/templates --ext njk --exec \"npm run build:html\""
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -15,6 +15,7 @@
     "nunjucks": "^3.2.4",
     "nunjucks-cli": "^1.0.0",
     "serve": "^14.2.5",
-    "vite": "^7.1.6"
+    "vite": "^7.1.6",
+    "vite-plugin-nunjucks": "^0.2.0"
   }
 }
