@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build:html": "node build.js && cpx \"src/assets/**/*\" dist/assets",
-    "dev": "nodemon --watch src/templates --ext njk --exec \"npm run build:html\""
-  },
+  "build:html": "node build.js",
+  "build": "npm run build:html"
+},
   "keywords": [],
   "author": "",
   "license": "ISC",
